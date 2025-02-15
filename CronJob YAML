@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: my-cronjob
+spec:
+  schedule: "0 0 * * *"  # Runs every midnight
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: my-job
+            image: my-job-image
+            command: ["sh", "-c", "echo Hello, Kubernetes!"]
+          restartPolicy: OnFailure
