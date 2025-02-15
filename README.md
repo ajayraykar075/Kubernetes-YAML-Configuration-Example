@@ -9,9 +9,7 @@ A basic Kubernetes YAML configuration consists of the following key fields:
     📌 metadata: Provides information about the resource, such as its name and labels.
     📌 spec: Defines the desired state of the resource.
 
-    Basic Deployment Configuration
-
-    apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app
@@ -32,7 +30,6 @@ spec:
           image: my-app-image:latest
           ports:
             - containerPort: 80
-
 
 
 🔍 Breakdown of This Example
