@@ -46,5 +46,3 @@ spec:
 
 This YAML file ensures Kubernetes maintains three replicas of the **my-app** container, which listens on port **80**.  
 
-Would you like additional examples for other Kubernetes resources, such as **Services or ConfigMaps**? 🚀
-
